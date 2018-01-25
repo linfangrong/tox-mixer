@@ -1,0 +1,37 @@
+{
+  "remoteClasses": [
+    {
+      "name": "ToxMixer",
+      "extends": "Hub",
+      "doc": "ToxMixer interface. Documentation about the module",
+      "constructor": {
+        "doc": "Create for the given pipeline",
+        "params": [
+          {
+            "name": "mediaPipeline",
+            "doc": "the parent :rom:cls:`MediaPipeline`",
+            "type": "MediaPipeline"
+          }
+        ]
+      },
+      "methods": [
+        {
+          "name": "setVideo",
+          "doc": "Sets the video port that will be connected to the sinks of every :rom:cls:`HubPort` of the ToxMixer",
+          "params": [
+            {
+              "name": "source",
+              "doc": "video source to be broadcasted",
+              "type": "HubPort"
+            }
+          ]
+        },
+        {
+          "name": "removeVideo",
+          "doc": "Remove the video port and stop the media pipeline.",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

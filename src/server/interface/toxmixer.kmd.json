@@ -1,0 +1,10 @@
+{
+  "name": "toxmixer",
+  "version": "1.0.0-dev",
+  "kurentoVersion": "^6.0.0",
+  "code": {
+    "implementation": {
+      "cppNamespace": "kurento"
+    }
+  }
+}
